@@ -2,4 +2,29 @@ body{
     display: flex;
     flex-direction: column;
     align-items: center;
+    background-color: $background-color-grey;
+    font-family: $font-primary;
+}
+
+.main {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+a {
+    text-decoration: none;
+    color: black;
+}
+
+.title{
+    font-family: $font-primary;
+    font-weight: 700;
+}
+
+.txt_cards{
+    display: flex;
+    flex-direction: column;
+    margin: 13px;
+    line-height: 10px;
 }
