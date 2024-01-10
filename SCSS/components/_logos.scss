@@ -1,8 +1,40 @@
-.logo{
-    width: 197px;
-    height: 36px;
+@media screen and (max-width: 767.98px){
+    .logo{
+        width: 197px;
+        height: 36px;
+    }
+
+    .fa-mobile-screen-button, .fa-list-ul, .fa-store{
+        color: $icon-color;
+    }
+
+    .fa-mobile-screen-button:hover, .fa-list-ul:hover, .fa-store:hover{
+        color: $primary-color;
+    }
+
+    .fa-1, .fa-2, .fa-3{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        border: 1px solid $primary-color;
+        border-radius: 20px;
+        width: 24px;
+        height: 24px;
+        background-color: $primary-color;
+        color: $text-btn-color;
+        margin: -12px;
+    }
+
+    .fa-solid{
+        display: flex;
+    }
+
+    .btn-heart{
+        position: absolute;
+        left: 345px;
+    }
 }
 
-i{
-    color: $icon-color;
+.fa-heart{
+    color: linear-gradient(to top, $primary-color, $secondary-color);
 }

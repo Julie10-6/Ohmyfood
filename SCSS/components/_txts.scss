@@ -1,0 +1,32 @@
+@media screen and (max-width: 767.98px){
+    a {
+        text-decoration: none;
+        color: black;
+    }
+
+    h1{
+        font-family: $font-title;
+        font-size: 28px;
+    }
+
+    .txt_cards{
+        display: flex;
+        flex-direction: column;
+        margin: 13px;
+        line-height: 10px;
+    }
+
+    h2{
+        font-family: $font-primary;
+        font-weight: 300;
+        font-size: 18px;
+        border-bottom: 3px solid $underline-color;
+        width: 40px;
+    }
+
+    footer,li{
+        list-style: none;
+        color: white;
+    }
+
+}
