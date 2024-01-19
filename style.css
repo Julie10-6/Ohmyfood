@@ -8,9 +8,53 @@
     width: 186px;
     height: 50px;
     color: white;
+    box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.3490196078);
+    transition: opacity;
+    transition-duration: 0.5s;
+    margin: 30px;
+  }
+  .btn:hover {
+    opacity: 75%;
   }
   .btn_search {
     display: none;
+  }
+  .hearts {
+    position: absolute;
+    left: 20px;
+  }
+  .full {
+    background: #9356DC;
+    background: linear-gradient(180deg, #9356DC 25%, #FF79DA 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    position: absolute;
+    left: 345px;
+    opacity: 0;
+    transition: 0.5s ease-in-out;
+  }
+  .empty {
+    position: absolute;
+    left: 345px;
+    opacity: 1;
+    transition: 0.5s ease-in-out;
+  }
+  .hearts:hover .full {
+    opacity: 1;
+    transition: 0.5s ease-in-out;
+  }
+  .hearts:hover .empty {
+    opacity: 0;
+    transition: 0.5s ease-in-out;
+  }
+  .check {
+    background-color: #99E2D0;
+    width: 59px;
+    height: 69px;
+    border-radius: 0px 15px 15px 0px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
   }
 }
 @media screen and (max-width: 767.98px) {
@@ -54,15 +98,23 @@
   .fa-solid {
     display: flex;
   }
-  .btn-heart {
+  .new {
+    border: 1px solid #99E2D0;
+    border-radius: 3px;
+    width: 80px;
+    height: 29px;
+    color: #008766;
+    background-color: #99E2D0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
     position: absolute;
-    left: 345px;
+    right: 92px;
+  }
+  .fa-circle-check {
+    color: white;
   }
 }
-.fa-heart {
-  color: linear-gradient(to top, #9356DC, #FF79DA);
-}
-
 @media screen and (max-width: 767.98px) {
   .cards {
     border-radius: 20px;
@@ -80,42 +132,110 @@
     display: flex;
     align-items: center;
     gap: 25px;
+    margin: 20px;
+    background-color: #F6F6F6;
+  }
+  .starter, .dish, .dessert {
+    width: 98%;
   }
   .starter_card {
     box-shadow: 0px 3px 15px rgba(0, 0, 0, 0.1);
     background-color: white;
     border-radius: 15px;
-    width: 350px;
+    width: 80%;
     height: 69px;
     display: flex;
     flex-direction: column;
     line-height: 0;
     padding: 5px 15px 5px 15px;
-    margin: 5px;
+    margin: 30px;
+    animation: menus-restaurants 1250ms;
+  }
+  @keyframes menus-restaurants {
+    0% {
+      opacity: 0;
+    }
+    17% {
+      opacity: 0.2;
+    }
+    24% {
+      opacity: 0.4;
+    }
+    46% {
+      opacity: 0.6;
+    }
+    85% {
+      opacity: 0.8;
+    }
+    100% {
+      opacity: 1;
+    }
   }
   .dish_card {
     box-shadow: 0px 3px 15px rgba(0, 0, 0, 0.1);
     background-color: white;
     border-radius: 15px;
-    width: 350px;
+    width: 80%;
     height: 69px;
     display: flex;
     flex-direction: column;
     line-height: 0;
     padding: 5px 15px 5px 15px;
-    margin: 5px;
+    margin: 30px;
+    animation: menus-restaurants 1250ms;
+  }
+  @keyframes menus-restaurants {
+    0% {
+      opacity: 0;
+    }
+    17% {
+      opacity: 0.2;
+    }
+    24% {
+      opacity: 0.4;
+    }
+    46% {
+      opacity: 0.6;
+    }
+    85% {
+      opacity: 0.8;
+    }
+    100% {
+      opacity: 1;
+    }
   }
   .dessert_card {
     box-shadow: 0px 3px 15px rgba(0, 0, 0, 0.1);
     background-color: white;
     border-radius: 15px;
-    width: 350px;
+    width: 80%;
     height: 69px;
     display: flex;
     flex-direction: column;
     line-height: 0;
     padding: 5px 15px 5px 15px;
-    margin: 5px;
+    margin: 30px;
+    animation: menus-restaurants 1250ms;
+  }
+  @keyframes menus-restaurants {
+    0% {
+      opacity: 0;
+    }
+    17% {
+      opacity: 0.2;
+    }
+    24% {
+      opacity: 0.4;
+    }
+    46% {
+      opacity: 0.6;
+    }
+    85% {
+      opacity: 0.8;
+    }
+    100% {
+      opacity: 1;
+    }
   }
   .txt_card {
     display: flex;
@@ -125,7 +245,7 @@
 }
 @media screen and (max-width: 767.98px) {
   .location {
-    border: 2px solid red;
+    border-top: 1px solid #EAEAEA;
     width: 100%;
     height: 50px;
     display: flex;
@@ -142,26 +262,32 @@
   input {
     border: none;
     background-color: #EAEAEA;
-    font-family: roboto;
   }
 }
 @media screen and (max-width: 767.98px) {
   a {
     text-decoration: none;
     color: black;
+    font-family: "Roboto", sans-serif;
+    font-weight: 700;
   }
   h1 {
-    font-family: "Shrikhand", serif;
-    font-style: italic;
     font-size: 28px;
+    font-family: "Shrikhand", serif;
+    font-weight: 400;
+  }
+  .title_homepage {
+    font-family: "Roboto", sans-serif;
+    font-weight: 700;
   }
   .txt_cards {
     display: flex;
     flex-direction: column;
     margin: 13px;
     line-height: 10px;
+    font-family: "Roboto", sans-serif;
   }
-  h2 {
+  .title_restaurants {
     font-family: "Roboto", sans-serif;
     font-weight: 300;
     font-size: 18px;
@@ -178,7 +304,6 @@
     display: flex;
     flex-direction: column;
     align-items: center;
-    background-color: #F6F6F6;
   }
   .main {
     display: flex;
@@ -186,15 +311,25 @@
     align-items: center;
     border-radius: 40px;
     margin: -55px;
-    background-color: #F6F6F6;
     width: 100%;
+    background-color: white;
   }
   .main_container {
     display: flex;
     flex-direction: column;
     align-items: center;
+    width: 100%;
   }
   .info {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    background-color: #F6F6F6;
+  }
+  .restaurants {
+    background-color: #F6F6F6;
+    width: 100%;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -207,5 +342,71 @@
     align-items: flex-start;
     background-color: #353535;
     width: 100%;
+    height: 10%;
+    margin-top: 70px;
+  }
+  ul {
+    display: flex;
+    flex-direction: column;
+  }
+  li {
+    display: flex;
+    flex-direction: row;
+    gap: 12px;
+    line-height: 23px;
+  }
+}
+@media screen and (max-width: 767.98px) {
+  .custom-loader {
+    display: none;
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    border: 8px solid #9356DC;
+    animation: s10-1 0.8s infinite linear alternate, s10-2 1.6s infinite linear;
+  }
+  @keyframes s10-1 {
+    0% {
+      -webkit-clip-path: polygon(50% 50%, 0 0, 50% 0%, 50% 0%, 50% 0%, 50% 0%, 50% 0%);
+              clip-path: polygon(50% 50%, 0 0, 50% 0%, 50% 0%, 50% 0%, 50% 0%, 50% 0%);
+    }
+    12.5% {
+      -webkit-clip-path: polygon(50% 50%, 0 0, 50% 0%, 100% 0%, 100% 0%, 100% 0%, 100% 0%);
+              clip-path: polygon(50% 50%, 0 0, 50% 0%, 100% 0%, 100% 0%, 100% 0%, 100% 0%);
+    }
+    25% {
+      -webkit-clip-path: polygon(50% 50%, 0 0, 50% 0%, 100% 0%, 100% 100%, 100% 100%, 100% 100%);
+              clip-path: polygon(50% 50%, 0 0, 50% 0%, 100% 0%, 100% 100%, 100% 100%, 100% 100%);
+    }
+    50% {
+      -webkit-clip-path: polygon(50% 50%, 0 0, 50% 0%, 100% 0%, 100% 100%, 50% 100%, 0% 100%);
+              clip-path: polygon(50% 50%, 0 0, 50% 0%, 100% 0%, 100% 100%, 50% 100%, 0% 100%);
+    }
+    62.5% {
+      -webkit-clip-path: polygon(50% 50%, 100% 0, 100% 0%, 100% 0%, 100% 100%, 50% 100%, 0% 100%);
+              clip-path: polygon(50% 50%, 100% 0, 100% 0%, 100% 0%, 100% 100%, 50% 100%, 0% 100%);
+    }
+    75% {
+      -webkit-clip-path: polygon(50% 50%, 100% 100%, 100% 100%, 100% 100%, 100% 100%, 50% 100%, 0% 100%);
+              clip-path: polygon(50% 50%, 100% 100%, 100% 100%, 100% 100%, 100% 100%, 50% 100%, 0% 100%);
+    }
+    100% {
+      -webkit-clip-path: polygon(50% 50%, 50% 100%, 50% 100%, 50% 100%, 50% 100%, 50% 100%, 0% 100%);
+              clip-path: polygon(50% 50%, 50% 100%, 50% 100%, 50% 100%, 50% 100%, 50% 100%, 0% 100%);
+    }
+  }
+  @keyframes s10-2 {
+    0% {
+      transform: scaleY(1) rotate(0deg);
+    }
+    49.99% {
+      transform: scaleY(1) rotate(135deg);
+    }
+    50% {
+      transform: scaleY(-1) rotate(0deg);
+    }
+    100% {
+      transform: scaleY(-1) rotate(-135deg);
+    }
   }
 }/*# sourceMappingURL=style.css.map */

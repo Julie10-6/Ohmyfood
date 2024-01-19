@@ -3,13 +3,37 @@
         box-shadow: (0px 3px 15px rgba(0, 0, 0, 0.1));
         background-color: $background-color-cards;
         border-radius: 15px;
-        width: 350px;
+        width: 80%;
         height: 69px;
         display: flex;
         flex-direction: column;
         line-height: 0;
         padding: 5px 15px 5px 15px;
-        margin: 5px;
+        margin: 30px;
+        animation: menus-restaurants 1250ms;
+        @keyframes menus-restaurants{
+            0% {
+                opacity: .0;
+            }
+            17% {
+                opacity: 0.2;
+            }
+            24% {
+                opacity: 0.4;
+            }
+            46% {
+                opacity: 0.6;
+            }
+            85% {
+                opacity: 0.8;
+            }
+
+            100% {
+                opacity: 1;
+            }
+
+        }
+        
     }
 
 
@@ -30,6 +54,12 @@
         display: flex;
         align-items: center;
         gap: 25px;
+        margin: 20px;
+        background-color: $background-color-grey;
+    }
+
+    .starter, .dish, .dessert{
+        width: 98%
     }
 
     .starter_card{

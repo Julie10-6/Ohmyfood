@@ -2,11 +2,19 @@
     a {
         text-decoration: none;
         color: black;
+        font-family: $font-primary;
+        font-weight: 700;
     }
 
     h1{
-        font-family: $font-title;
         font-size: 28px;
+        font-family: $font-title;
+        font-weight: 400;
+    }
+
+    .title_homepage{
+        font-family: $font-primary;
+        font-weight: 700;
     }
 
     .txt_cards{
@@ -14,9 +22,10 @@
         flex-direction: column;
         margin: 13px;
         line-height: 10px;
+        font-family: $font-primary;
     }
 
-    h2{
+    .title_restaurants{
         font-family: $font-primary;
         font-weight: 300;
         font-size: 18px;
