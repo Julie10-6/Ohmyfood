@@ -10,30 +10,6 @@
         line-height: 0;
         padding: 5px 15px 5px 15px;
         margin: 30px;
-        animation: menus-restaurants 1250ms;
-        @keyframes menus-restaurants{
-            0% {
-                opacity: .0;
-            }
-            17% {
-                opacity: 0.2;
-            }
-            24% {
-                opacity: 0.4;
-            }
-            46% {
-                opacity: 0.6;
-            }
-            85% {
-                opacity: 0.8;
-            }
-
-            100% {
-                opacity: 1;
-            }
-
-        }
-        
     }
 
 
@@ -64,14 +40,83 @@
 
     .starter_card{
         @include restaurants_cards;
+        animation: menus-restaurants 1s;
+        @keyframes menus-restaurants{
+            0% {
+                opacity: .0;
+            }
+            17% {
+                opacity: .0;
+            }
+            24% {
+                opacity: .0;
+            }
+            46% {
+                opacity: 0.6;
+            }
+            85% {
+                opacity: 0.8;
+            }
+
+            100% {
+                opacity: 1;
+            }
+
+        }
     }
 
     .dish_card{
         @include restaurants_cards;
+        animation: menus-restaurants 2s;
+        @keyframes menus-restaurants{
+            0% {
+                opacity: .0;
+            }
+            17% {
+                opacity: .0;
+            }
+            24% {
+                opacity: .0;
+            }
+            46% {
+                opacity: 0.6;
+            }
+            85% {
+                opacity: 0.8;
+            }
+
+            100% {
+                opacity: 1;
+            }
+
+        }
     }
 
     .dessert_card{
         @include restaurants_cards;
+        animation: menus-restaurants 3s;
+        @keyframes menus-restaurants{
+            0% {
+                opacity: .0;
+            }
+            17% {
+                opacity: .0;
+            }
+            24% {
+                opacity: .0;
+            }
+            46% {
+                opacity: 0.6;
+            }
+            85% {
+                opacity: 0.8;
+            }
+
+            100% {
+                opacity: 1;
+            }
+
+        }
     }
 
     .txt_card{
