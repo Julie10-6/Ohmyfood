@@ -17,9 +17,19 @@
         font-weight: 700;
     }
 
-    .txt_cards{
+    .txt_cards_homepage{
         margin: 13px;
         line-height: 10px;
+    }
+
+    .txt_card{
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+    }
+
+    .price{
+        position: relative;
     }
 
     .restaurants_name{

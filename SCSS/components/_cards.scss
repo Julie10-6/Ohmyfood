@@ -20,6 +20,7 @@
         height: 251px;
         gap: 15px;
         margin-bottom: 30px;
+        position: relative;
     }
 
     nav{
@@ -35,7 +36,7 @@
     }
 
     .starter, .dish, .dessert{
-        width: 98%
+        width: 98%;
     }
 
     .starter_card{
@@ -117,11 +118,5 @@
             }
 
         }
-    }
-
-    .txt_card{
-        display: flex;
-        flex-direction: row;
-        justify-content: space-between;
     }
 }

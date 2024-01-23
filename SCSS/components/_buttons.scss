@@ -20,8 +20,9 @@
     }
 
     .hearts{
-        position: absolute;
-        left: 20px;
+        position: relative;
+        right: 62px;
+        bottom: 54px;
     }
 
     .full{
@@ -57,7 +58,7 @@
     .check{
         background-color: $underline-color;
         width: 59px;
-        height: 69px;
+        height: 79px;
         border-radius: 0px 15px 15px 0px;
         display: flex;
         align-items: center;
@@ -65,6 +66,7 @@
         position: relative;
         left: 74px;
         bottom: 43px;
+        transition: .5s;
         &:hover{
             left: 15px;
         }
