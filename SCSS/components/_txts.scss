@@ -6,10 +6,9 @@
         font-family: $font-primary;
     }
 
-    h1{
-        font-size: 28px;
-        font-family: $font-title;
-        font-weight: 400;
+    .txt_info{
+        text-align: center;
+        padding: 15px;
     }
 
     .title_homepage{
@@ -28,14 +27,14 @@
         justify-content: space-between;
     }
 
-    .price{
-        position: relative;
-    }
-
-    .restaurants_name{
+    .restaurants_name_homepage{
         font-family: $font-primary;
         font-weight: 300;
         font-size: 17px;
+    }
+
+    .titre_relou{
+        font-family: $font-title;
     }
 
     .title_restaurants{

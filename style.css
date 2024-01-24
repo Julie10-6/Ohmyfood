@@ -1,11 +1,17 @@
 /*colors*/
 /*text*/
+@import url("https://fonts.googleapis.com/css?family=Amatic+SC");
 @media screen and (max-width: 767.98px) {
+  .fa-arrow-left {
+    position: absolute;
+    top: 17px;
+    left: 17px;
+  }
   .btn {
     background: linear-gradient(to top, #9356DC, #FF79DA);
     border-radius: 30px;
     border: none;
-    width: 186px;
+    width: 218px;
     height: 50px;
     color: white;
     box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.3490196078);
@@ -48,6 +54,9 @@
     opacity: 0;
     transition: 0.5s ease-in-out;
   }
+  .select_animation {
+    display: flex;
+  }
   .check {
     background-color: #99E2D0;
     width: 59px;
@@ -62,6 +71,15 @@
     transition: 0.5s;
   }
   .check:hover {
+    left: 15px;
+  }
+  .price {
+    position: relative;
+    left: 52px;
+    transition: 0.5s;
+    transition: 0.5s;
+  }
+  .price:hover {
     left: 15px;
   }
 }
@@ -268,6 +286,7 @@
   input {
     border: none;
     background-color: #EAEAEA;
+    text-align: center;
   }
 }
 @media screen and (max-width: 767.98px) {
@@ -277,10 +296,9 @@
     font-weight: 700;
     font-family: "Roboto", sans-serif;
   }
-  h1 {
-    font-size: 28px;
-    font-family: "Shrikhand", serif;
-    font-weight: 400;
+  .txt_info {
+    text-align: center;
+    padding: 15px;
   }
   .title_homepage {
     font-family: "Roboto", sans-serif;
@@ -295,13 +313,13 @@
     flex-direction: row;
     justify-content: space-between;
   }
-  .price {
-    position: relative;
-  }
-  .restaurants_name {
+  .restaurants_name_homepage {
     font-family: "Roboto", sans-serif;
     font-weight: 300;
     font-size: 17px;
+  }
+  .titre_relou {
+    font-family: "Shrikhand", serif;
   }
   .title_restaurants {
     font-family: "Roboto", sans-serif;
@@ -361,6 +379,9 @@
     height: 10%;
     margin-top: 70px;
   }
+  .footer_title {
+    font-family: "Roboto", sans-serif;
+  }
   ul {
     display: flex;
     flex-direction: column;
@@ -373,7 +394,6 @@
   }
 }
 @media screen and (max-width: 767.98px) {
-  @import url("https://fonts.googleapis.com/css?family=Amatic+SC");
   .loader {
     background-color: white;
     height: 100%;
