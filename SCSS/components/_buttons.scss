@@ -31,6 +31,12 @@
         bottom: 54px;
     }
 
+    .hearts_restaurants{
+        position: relative;
+        bottom: 45px;
+        right: 196px;
+    }
+
     .full{
         background: #9356DC;
         background: linear-gradient(180deg, #9356DC 25%, #FF79DA 100%);
@@ -49,7 +55,7 @@
         transition: .5s ease-in-out;
     }
 
-    .hearts:hover{
+    .hearts:hover, .hearts_restaurants:hover{
         .full{
             opacity: 1;
             transition: .5s ease-in-out;        
@@ -64,6 +70,7 @@
     .select_animation{
         position: relative;
         bottom: 31px;
+        transition: .5s ease-in-out;
         transform: translateX(0);
         &:hover{
             transition: .3s ease-in-out;

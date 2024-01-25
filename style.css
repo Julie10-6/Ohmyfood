@@ -30,6 +30,11 @@
     right: 62px;
     bottom: 54px;
   }
+  .hearts_restaurants {
+    position: relative;
+    bottom: 45px;
+    right: 196px;
+  }
   .full {
     background: #9356DC;
     background: linear-gradient(180deg, #9356DC 25%, #FF79DA 100%);
@@ -46,17 +51,18 @@
     opacity: 1;
     transition: 0.5s ease-in-out;
   }
-  .hearts:hover .full {
+  .hearts:hover .full, .hearts_restaurants:hover .full {
     opacity: 1;
     transition: 0.5s ease-in-out;
   }
-  .hearts:hover .empty {
+  .hearts:hover .empty, .hearts_restaurants:hover .empty {
     opacity: 0;
     transition: 0.5s ease-in-out;
   }
   .select_animation {
     position: relative;
     bottom: 31px;
+    transition: 0.5s ease-in-out;
     transform: translateX(0);
   }
   .select_animation:hover {
