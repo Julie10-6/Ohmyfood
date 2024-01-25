@@ -55,7 +55,13 @@
     transition: 0.5s ease-in-out;
   }
   .select_animation {
-    display: flex;
+    position: relative;
+    bottom: 31px;
+    transform: translateX(0);
+  }
+  .select_animation:hover {
+    transition: 0.3s ease-in-out;
+    transform: translateX(-59px);
   }
   .check {
     background-color: #99E2D0;
@@ -68,19 +74,12 @@
     position: relative;
     left: 74px;
     bottom: 43px;
-    transition: 0.5s;
-  }
-  .check:hover {
-    left: 15px;
   }
   .price {
     position: relative;
-    left: 52px;
-    transition: 0.5s;
-    transition: 0.5s;
-  }
-  .price:hover {
-    left: 15px;
+    left: 37px;
+    top: 32px;
+    font-weight: bold;
   }
 }
 @media screen and (max-width: 767.98px) {
@@ -178,6 +177,7 @@
     line-height: 0;
     padding: 5px 15px 5px 15px;
     margin: 30px;
+    overflow: hidden;
     animation: menus-restaurants 1s;
   }
   @keyframes menus-restaurants {
@@ -211,6 +211,7 @@
     line-height: 0;
     padding: 5px 15px 5px 15px;
     margin: 30px;
+    overflow: hidden;
     animation: menus-restaurants 2s;
   }
   @keyframes menus-restaurants {
@@ -244,6 +245,7 @@
     line-height: 0;
     padding: 5px 15px 5px 15px;
     margin: 30px;
+    overflow: hidden;
     animation: menus-restaurants 3s;
   }
   @keyframes menus-restaurants {
@@ -299,6 +301,7 @@
   .txt_info {
     text-align: center;
     padding: 15px;
+    font-family: "Roboto", sans-serif;
   }
   .title_homepage {
     font-family: "Roboto", sans-serif;

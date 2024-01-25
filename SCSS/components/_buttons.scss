@@ -62,7 +62,13 @@
     }
 
     .select_animation{
-        display: flex;
+        position: relative;
+        bottom: 31px;
+        transform: translateX(0);
+        &:hover{
+            transition: .3s ease-in-out;
+            transform: translateX(-59px);
+        }    
     }
 
     .check{
@@ -76,20 +82,13 @@
         position: relative;
         left: 74px;
         bottom: 43px;
-        transition: .5s;
-        &:hover{
-            left: 15px;
-        }
     }
 
     .price{
         position: relative;
-        left: 52px;
-        transition: .5s;
-                transition: .5s;
-        &:hover{
-            left: 15px;
-        }
+        left: 37px;
+        top: 32px;
+        font-weight: bold;
     }
 
 }
