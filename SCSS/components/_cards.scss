@@ -1,4 +1,4 @@
-@media screen and (max-width: 767.98px){
+
     @mixin restaurants_cards{
         box-shadow: (0px 3px 15px rgba(0, 0, 0, 0.1));
         background-color: $background-color-cards;
@@ -11,6 +11,12 @@
         padding: 5px 15px 5px 15px;
         margin: 30px;
         overflow: hidden;
+    }
+
+    .cards_homepage{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
     }
 
 
@@ -120,4 +126,3 @@
 
         }
     }
-}
