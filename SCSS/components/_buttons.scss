@@ -34,8 +34,8 @@
 
     .hearts_restaurants{
         position: relative;
-        bottom: 45px;
-        right: 196px;
+        bottom: 51px;
+        left: 38px;
     }
 
     .full{
@@ -76,7 +76,7 @@
         &:hover{
             transition: .3s ease-in-out;
             transform: translateX(-59px);
-        }    
+        }      
     }
 
     .check{

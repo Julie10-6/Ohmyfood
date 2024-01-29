@@ -4,24 +4,21 @@
     height: 100%;
     width: 100%;
     overflow: hidden;
-    z-index: 2;
-    display: none;
+    z-index: -1000;
+    opacity: 0;
     position: fixed;
     animation-delay: 1.2s;
     animation-fill-mode: both;
-    animation: loader 2s ease-in-out;
+    animation: loader 2s;
   }
 
   @keyframes loader{
     0% {
         opacity: 1;
-        display: block;
-        z-index: 2;
+        z-index: 1000;
 
     }
-    17% {
-        opacity: 1;
-    }
+
     24% {
         opacity: 1;
     }
@@ -34,7 +31,7 @@
 
     100% {
         opacity: 0;
-        z-index: 0;
+        z-index: -1000;
 
     }
 
