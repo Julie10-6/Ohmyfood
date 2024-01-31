@@ -1,53 +1,59 @@
 
-    .logo{
-        width: 197px;
-        height: 36px;
-    }
+.logo{
+    width: 197px;
+    height: 36px;
+}
 
-    .fa-mobile-screen-button, .fa-list-ul, .fa-store{
-        color: $icon-color;
-    }
+.fa-mobile-screen-button, .fa-list-ul, .fa-store{
+    color: $icon-color;
+}
 
-    .fa-mobile-screen-button:hover, .fa-list-ul:hover, .fa-store:hover{
-        color: $primary-color;
-    }
+.fa-mobile-screen-button:hover, .fa-list-ul:hover, .fa-store:hover{
+    color: $primary-color;
+}
 
-    .fa-1, .fa-2, .fa-3{
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        border: 1px solid $primary-color;
-        border-radius: 20px;
-        width: 24px;
-        height: 24px;
-        background-color: $primary-color;
-        color: $text-btn-color;
-        margin: -12px;
-    }
+.fa-1, .fa-2, .fa-3{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: 1px solid $primary-color;
+    border-radius: 20px;
+    width: 24px;
+    height: 24px;
+    background-color: $primary-color;
+    color: $text-btn-color;
+    font-family: $font-primary;
+    font-weight: 500;
+    font-size: 14px;
+    margin: -12px;
+}
 
-    .fa-solid{
-        display: flex;
-    }
+.new{
+    border: 1px solid $underline-color;
+    border-radius: 3px;
+    width: 80px;
+    height: 29px;
+    color: $new-txt-color;
+    background-color: $underline-color;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: absolute;
+    left: 248px;
+    font-weight: 500;
+    top: 13px;
+}
 
-    .new{
-        border: 1px solid $underline-color;
-        border-radius: 3px;
-        width: 80px;
-        height: 29px;
-        color: $new-txt-color;
-        background-color: $underline-color;
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        position: absolute;
-        left: 248px;
-        font-weight: 500;
-        top: 13px;
-    }
+.fa-circle-check{
+    color: white;
+}
 
-    .fa-circle-check{
-        color: white;
-    }
-
+// @media only screen and (min-width: 768px) {
+//     .new{
+//         position: relative;
+//         top: 13px;
+//         left: 355px;
+//     }
+// } 
 
 

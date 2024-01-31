@@ -1,56 +1,56 @@
 
-    a {
-        text-decoration: none;
-        color: black;
-        font-weight: 700;
-        font-family: $font-primary;
-    }
+a {
+    text-decoration: none;
+    color: black;
+    font-weight: 700;
+    font-family: $font-primary;
+}
 
-    .txt_info{
-        text-align: center;
-        padding: 15px;
-        font-family: $font-primary;
-    }
+.txt_info{
+    text-align: center;
+    padding: 15px;
+    font-family: $font-primary;
+}
 
-    .title_homepage{
-        font-family: $font-primary;
-        font-weight: 700;
-        margin-left: 35px;
-    }
+.title_homepage{
+    font-family: $font-primary;
+    font-weight: 700;
+    margin-left: 35px;
+}
 
-    .txt_cards_homepage{
-        margin: 13px;
-        line-height: 10px;
-    }
+.txt_cards_homepage{
+    margin: 13px;
+    line-height: 10px;
+}
 
-    .txt_card{
-        display: flex;
-        flex-direction: row;
-        justify-content: space-between;
-    }
+.txt_card{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
 
-    .restaurants_name_homepage{
-        font-family: $font-primary;
-        font-weight: 300;
-        font-size: 17px;
-    }
+.restaurants_name_homepage{
+    font-family: $font-primary;
+    font-weight: 300;
+    font-size: 17px;
+}
 
-    .name_restaurant{
-        font-family: $font-title;
-        margin-left: 17px;
-        font-weight: 400;
-    }
+.name_restaurant{
+    font-family: $font-title;
+    margin-left: 17px;
+    font-weight: 400;
+}
 
-    .title_restaurants{
-        font-family: $font-primary;
-        font-weight: 300;
-        font-size: 18px;
-        border-bottom: 3px solid $underline-color;
-        width: 40px;
-    }
+.title_restaurants{
+    font-family: $font-primary;
+    font-weight: 300;
+    font-size: 18px;
+    border-bottom: 3px solid $underline-color;
+    width: 40px;
+}
 
-    footer,li{
-        list-style: none;
-        color: white;
-    }
+footer,li{
+    list-style: none;
+    color: white;
+}
 

@@ -16,7 +16,7 @@ body{
     border-radius: 40px;
     margin: -55px;
     width: 100%;
-    background-color: white;
+    background-color: $background-color-grey;
 }
 
 .main_container{
@@ -51,7 +51,7 @@ body{
 
     .fonctionnement{
         display: flex;
-        flex-direction: row;
+        flex-direction: column;
         width: 100%;
     }
 
