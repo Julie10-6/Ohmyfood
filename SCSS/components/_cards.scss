@@ -27,7 +27,7 @@
     position: relative;
 }
 
-nav{
+.fonctionnement_cards{
     border-radius: 20px;
     box-shadow: (0px 3px 15px rgba(0, 0, 0, 0.1));
     width: 322px;
@@ -41,37 +41,11 @@ nav{
 }
 
 .starter, .dish, .dessert{
-    width: 98%;
+    width: 97%;
+    margin-left: 15px;
 }
 
 .starter_card{
-    @include restaurants_cards;
-    animation: menus-restaurants 1s;
-    @keyframes menus-restaurants{
-        0% {
-            opacity: .0;
-        }
-        17% {
-            opacity: .0;
-        }
-        24% {
-            opacity: .0;
-        }
-        46% {
-            opacity: 0.6;
-        }
-        85% {
-            opacity: 0.8;
-        }
-
-        100% {
-            opacity: 1;
-        }
-
-    }
-}
-
-.dish_card{
     @include restaurants_cards;
     animation: menus-restaurants 2s;
     @keyframes menus-restaurants{
@@ -98,9 +72,36 @@ nav{
     }
 }
 
+.dish_card{
+    @include restaurants_cards;
+    animation: menus-restaurants 4s;
+    @keyframes menus-restaurants{
+        0% {
+            opacity: .0;
+        }
+        17% {
+            opacity: .0;
+        }
+        24% {
+            opacity: .0;
+        }
+        46% {
+            opacity: 0.6;
+        }
+        85% {
+            opacity: 0.8;
+        }
+
+        100% {
+            opacity: 1;
+        }
+
+    }
+}
+
 .dessert_card{
     @include restaurants_cards;
-    animation: menus-restaurants 3s;
+    animation: menus-restaurants 6s;
     @keyframes menus-restaurants{
         0% {
             opacity: .0;
@@ -149,9 +150,6 @@ nav{
     }
 
     .fonctionnement_cards{
-        display: flex;
-        flex-direction: row;
-        justify-content: center; 
-        width: 100%;
+        width: 335px;
     }
 }

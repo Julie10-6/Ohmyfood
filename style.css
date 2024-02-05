@@ -32,15 +32,17 @@
 }
 
 .hearts {
-  position: relative;
-  right: 62px;
+  position: absolute;
+  left: 82%;
   bottom: 54px;
+  font-size: 1.2em;
 }
 
 .hearts_restaurants {
   position: relative;
-  bottom: 51px;
-  left: 38px;
+  bottom: 54px;
+  left: 83%;
+  font-size: 1.2em;
 }
 
 .full {
@@ -49,14 +51,14 @@
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   position: absolute;
-  left: 345px;
+  left: 5%;
   opacity: 0;
   transition: 0.5s ease-in-out;
 }
 
 .empty {
   position: absolute;
-  left: 345px;
+  left: 5%;
   opacity: 1;
   transition: 0.5s ease-in-out;
 }
@@ -105,7 +107,7 @@
   .hearts_restaurants {
     position: relative;
     bottom: 55px;
-    right: 60px;
+    left: 183px;
   }
 }
 .img_dishes_menu {
@@ -126,6 +128,7 @@
 .logo {
   width: 197px;
   height: 36px;
+  margin-bottom: 15px;
 }
 
 .fa-mobile-screen-button, .fa-list-ul, .fa-store {
@@ -136,20 +139,22 @@
   color: #9356DC;
 }
 
-.fa-1, .fa-2, .fa-3 {
-  display: flex;
-  align-items: center;
-  justify-content: center;
+.number, .fa-2, .fa-3 {
   border: 1px solid #9356DC;
   border-radius: 20px;
   width: 24px;
   height: 24px;
   background-color: #9356DC;
-  color: white;
+  margin: -12px;
+}
+
+.number_fonctionnement {
   font-family: "Roboto", sans-serif;
   font-weight: 500;
   font-size: 14px;
-  margin: -12px;
+  color: white;
+  margin-left: 7px;
+  margin-top: 4px;
 }
 
 .new {
@@ -163,7 +168,7 @@
   align-items: center;
   justify-content: center;
   position: absolute;
-  left: 248px;
+  right: 5%;
   font-weight: 500;
   top: 13px;
 }
@@ -172,6 +177,13 @@
   color: white;
 }
 
+@media only screen and (min-width: 768px) {
+  .new {
+    position: absolute;
+    top: 13px;
+    right: 5%;
+  }
+}
 .cards_homepage {
   display: flex;
   flex-direction: column;
@@ -188,7 +200,7 @@
   position: relative;
 }
 
-nav {
+.fonctionnement_cards {
   border-radius: 20px;
   box-shadow: 0px 3px 15px rgba(0, 0, 0, 0.1);
   width: 322px;
@@ -202,43 +214,11 @@ nav {
 }
 
 .starter, .dish, .dessert {
-  width: 98%;
+  width: 97%;
+  margin-left: 15px;
 }
 
 .starter_card {
-  box-shadow: 0px 3px 15px rgba(0, 0, 0, 0.1);
-  background-color: white;
-  border-radius: 15px;
-  width: 80%;
-  height: 69px;
-  line-height: 0;
-  padding: 5px 15px 5px 15px;
-  margin: 30px;
-  overflow: hidden;
-  animation: menus-restaurants 1s;
-}
-@keyframes menus-restaurants {
-  0% {
-    opacity: 0;
-  }
-  17% {
-    opacity: 0;
-  }
-  24% {
-    opacity: 0;
-  }
-  46% {
-    opacity: 0.6;
-  }
-  85% {
-    opacity: 0.8;
-  }
-  100% {
-    opacity: 1;
-  }
-}
-
-.dish_card {
   box-shadow: 0px 3px 15px rgba(0, 0, 0, 0.1);
   background-color: white;
   border-radius: 15px;
@@ -271,6 +251,39 @@ nav {
   }
 }
 
+.dish_card {
+  box-shadow: 0px 3px 15px rgba(0, 0, 0, 0.1);
+  background-color: white;
+  border-radius: 15px;
+  width: 80%;
+  height: 69px;
+  line-height: 0;
+  padding: 5px 15px 5px 15px;
+  margin: 30px;
+  overflow: hidden;
+  animation: menus-restaurants 4s;
+}
+@keyframes menus-restaurants {
+  0% {
+    opacity: 0;
+  }
+  17% {
+    opacity: 0;
+  }
+  24% {
+    opacity: 0;
+  }
+  46% {
+    opacity: 0.6;
+  }
+  85% {
+    opacity: 0.8;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
 .dessert_card {
   box-shadow: 0px 3px 15px rgba(0, 0, 0, 0.1);
   background-color: white;
@@ -281,7 +294,7 @@ nav {
   padding: 5px 15px 5px 15px;
   margin: 30px;
   overflow: hidden;
-  animation: menus-restaurants 3s;
+  animation: menus-restaurants 6s;
 }
 @keyframes menus-restaurants {
   0% {
@@ -324,10 +337,7 @@ nav {
     width: 75%;
   }
   .fonctionnement_cards {
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    width: 100%;
+    width: 335px;
   }
 }
 .location {
@@ -418,16 +428,18 @@ body {
   display: flex;
   flex-direction: column;
   align-items: center;
+  margin: 15px 0px 0px 0px;
 }
 
 .main {
   display: flex;
   flex-direction: column;
   align-items: flex-start;
-  border-radius: 40px;
+  border-radius: 40px 40px 0px 0px;
   margin: -55px;
   width: 100%;
   background-color: #F6F6F6;
+  height: 1450px;
 }
 
 .main_container {
@@ -458,11 +470,13 @@ body {
 @media only screen and (min-width: 768px) {
   .main_container {
     display: flex;
+    align-items: flex-start;
   }
   .fonctionnement {
     display: flex;
-    flex-direction: column;
+    flex-direction: row;
     width: 100%;
+    justify-content: center;
   }
   .main {
     align-items: center;
@@ -477,7 +491,6 @@ footer {
   background-color: #353535;
   width: 100%;
   height: 10%;
-  margin-top: 70px;
 }
 
 .footer_title {
@@ -538,18 +551,21 @@ li {
     opacity: 1;
     z-index: 1000;
   }
+  17% {
+    opacity: 1;
+  }
   24% {
     opacity: 1;
   }
   46% {
-    opacity: 0.7;
+    opacity: 1;
   }
   85% {
-    opacity: 0.3;
+    opacity: 0.4;
   }
   100% {
     opacity: 0;
-    z-index: -1000;
+    z-index: 1000;
   }
 }
 .txt_loader {
