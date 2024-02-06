@@ -28,6 +28,12 @@ body{
     width: 100%;
 }
 
+.main_container_homepage{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+}
+
 .info{
     display: flex;
     flex-direction: column;
@@ -41,6 +47,12 @@ body{
     flex-direction: column;
 }
 
+.fonctionnement_block{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
 .restaurants{
     background-color: $background-color-grey;
     width: 100%;
@@ -49,14 +61,19 @@ body{
 @media only screen and (min-width: 768px) {
     .main_container {
         display: flex;
-        align-items: flex-start;
+        align-items: center;
     }
 
     .fonctionnement{
         display: flex;
-        flex-direction: row;
+        flex-direction: column;
         width: 100%;
         justify-content: center;
+    }
+
+    .fonctionnement_block{
+        display: flex;
+        flex-direction: row;
     }
 
     .main{
