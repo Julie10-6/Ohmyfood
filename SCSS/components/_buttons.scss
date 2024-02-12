@@ -16,7 +16,7 @@
     transition-duration: 0.5s;
     margin: 30px;
     &:hover {
-        opacity: 75%;
+        opacity: 75%; 
         box-shadow: 0px 4px 15px #00000059;
     }
 }
@@ -69,16 +69,13 @@
     }
 }
 
-.select_animation{
-    position: relative;
-    bottom: 31px;
-    transition: .5s ease-in-out;
-    transform: translateX(0);
-    &:hover{
+
+.starter_card:hover, .dish_card:hover, .dessert_card:hover{
+    .check, .price{
         transition: .3s ease-in-out;
         transform: translateX(-59px);
-    }      
-}
+    }
+} 
 
 .check{
     background-color: $underline-color;
@@ -89,15 +86,14 @@
     align-items: center;
     justify-content: center;
     position: relative;
-    left: 74px;
-    bottom: 43px;
+    left: 437px;
+    bottom: 74px;
+    transition: 0.5s ease-in-out;
 }
 
 .price{
-    position: relative;
-    left: 37px;
-    top: 32px;
     font-weight: bold;
+    transition: 0.5s ease-in-out;
 }
 
 @media only screen and (min-width: 768px) {
@@ -105,5 +101,18 @@
         position: relative;
         bottom: 57px;
         left: 28%;
+    }
+
+    .check{
+        position: relative;
+        left: 753px;
+        bottom: 74px;
+    }
+
+    .starter_card:hover, .dish_card:hover, .dessert_card:hover{
+        .check, .price{
+            transition: .3s ease-in-out;
+            transform: translateX(-77px);
+        }
     }
 }

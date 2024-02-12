@@ -72,13 +72,7 @@
   transition: 0.5s ease-in-out;
 }
 
-.select_animation {
-  position: relative;
-  bottom: 31px;
-  transition: 0.5s ease-in-out;
-  transform: translateX(0);
-}
-.select_animation:hover {
+.starter_card:hover .check, .starter_card:hover .price, .dish_card:hover .check, .dish_card:hover .price, .dessert_card:hover .check, .dessert_card:hover .price {
   transition: 0.3s ease-in-out;
   transform: translateX(-59px);
 }
@@ -92,15 +86,14 @@
   align-items: center;
   justify-content: center;
   position: relative;
-  left: 74px;
-  bottom: 43px;
+  left: 437px;
+  bottom: 74px;
+  transition: 0.5s ease-in-out;
 }
 
 .price {
-  position: relative;
-  left: 37px;
-  top: 32px;
   font-weight: bold;
+  transition: 0.5s ease-in-out;
 }
 
 @media only screen and (min-width: 768px) {
@@ -108,6 +101,15 @@
     position: relative;
     bottom: 57px;
     left: 28%;
+  }
+  .check {
+    position: relative;
+    left: 753px;
+    bottom: 74px;
+  }
+  .starter_card:hover .check, .starter_card:hover .price, .dish_card:hover .check, .dish_card:hover .price, .dessert_card:hover .check, .dessert_card:hover .price {
+    transition: 0.3s ease-in-out;
+    transform: translateX(-77px);
   }
 }
 .img_dishes_menu {
@@ -325,7 +327,7 @@
     row-gap: 25px;
   }
   .cards {
-    width: 85%;
+    width: 80%;
     height: 251px;
   }
   .starter, .dish, .dessert {
@@ -416,6 +418,11 @@ footer, li {
   color: white;
 }
 
+@media only screen and (min-width: 768px) {
+  .title_homepage {
+    margin-left: 10%;
+  }
+}
 * {
   font-family: "Roboto", sans-serif;
 }
@@ -427,7 +434,7 @@ body {
   margin: 15px 0px 0px 0px;
 }
 
-.main {
+.main, .main_la_note_enchantee {
   display: flex;
   flex-direction: column;
   align-items: flex-start;
@@ -489,11 +496,15 @@ body {
   .fonctionnement_block {
     display: flex;
     flex-direction: row;
+    justify-content: center;
   }
-  .main {
+  .main, .main_la_note_enchantee {
     align-items: center;
     width: 70%;
     background-color: #F6F6F6;
+  }
+  .main_la_note_enchantee {
+    height: 1560px;
   }
 }
 footer {
