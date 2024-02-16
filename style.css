@@ -72,7 +72,11 @@
   transition: 0.5s ease-in-out;
 }
 
-.starter_card:hover .check, .starter_card:hover .price, .dish_card:hover .check, .dish_card:hover .price, .dessert_card:hover .check, .dessert_card:hover .price {
+.starter_card:hover .check, .dish_card:hover .check, .dessert_card:hover .check {
+  transition: 0.3s ease-in-out;
+  transform: translateX(0px);
+}
+.starter_card:hover .price, .dish_card:hover .price, .dessert_card:hover .price {
   transition: 0.3s ease-in-out;
   transform: translateX(-59px);
 }
@@ -85,10 +89,11 @@
   display: flex;
   align-items: center;
   justify-content: center;
-  position: relative;
-  left: 437px;
-  bottom: 74px;
+  position: absolute;
+  right: 0px;
+  top: 0px;
   transition: 0.5s ease-in-out;
+  transform: translateX(59px);
 }
 
 .price {
@@ -101,15 +106,6 @@
     position: relative;
     bottom: 57px;
     left: 28%;
-  }
-  .check {
-    position: relative;
-    left: 753px;
-    bottom: 74px;
-  }
-  .starter_card:hover .check, .starter_card:hover .price, .dish_card:hover .check, .dish_card:hover .price, .dessert_card:hover .check, .dessert_card:hover .price {
-    transition: 0.3s ease-in-out;
-    transform: translateX(-77px);
   }
 }
 .img_dishes_menu {
@@ -229,6 +225,7 @@
   padding: 5px 15px 5px 15px;
   margin: 30px;
   overflow: hidden;
+  position: relative;
   animation: menus-restaurants 2s;
 }
 @keyframes menus-restaurants {
@@ -262,6 +259,7 @@
   padding: 5px 15px 5px 15px;
   margin: 30px;
   overflow: hidden;
+  position: relative;
   animation: menus-restaurants 4s;
 }
 @keyframes menus-restaurants {
@@ -295,6 +293,7 @@
   padding: 5px 15px 5px 15px;
   margin: 30px;
   overflow: hidden;
+  position: relative;
   animation: menus-restaurants 6s;
 }
 @keyframes menus-restaurants {
@@ -363,10 +362,13 @@ input {
 }
 
 a {
+  color: white;
   text-decoration: none;
+}
+
+.link_cards_homepage {
   color: black;
   font-weight: 700;
-  font-family: "Roboto", sans-serif;
 }
 
 .txt_info {

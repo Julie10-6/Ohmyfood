@@ -71,7 +71,12 @@
 
 
 .starter_card:hover, .dish_card:hover, .dessert_card:hover{
-    .check, .price{
+    .check{
+        transition: .3s ease-in-out;
+        transform: translateX(0px);
+    }
+
+    .price{
         transition: .3s ease-in-out;
         transform: translateX(-59px);
     }
@@ -85,34 +90,22 @@
     display: flex;
     align-items: center;
     justify-content: center;
-    position: relative;
-    left: 437px;
-    bottom: 74px;
+    position: absolute;
+    right: 0px;
+    top: 0px;
     transition: 0.5s ease-in-out;
+    transform: translateX(59px);
 }
 
 .price{
     font-weight: bold;
     transition: 0.5s ease-in-out;
-}
+}  
 
 @media only screen and (min-width: 768px) {
     .hearts_restaurants{
         position: relative;
         bottom: 57px;
         left: 28%;
-    }
-
-    .check{
-        position: relative;
-        left: 753px;
-        bottom: 74px;
-    }
-
-    .starter_card:hover, .dish_card:hover, .dessert_card:hover{
-        .check, .price{
-            transition: .3s ease-in-out;
-            transform: translateX(-77px);
-        }
     }
 }
